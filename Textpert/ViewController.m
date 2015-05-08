@@ -8,14 +8,17 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<FBLoginViewDelegate>
 
+@property (weak, nonatomic) IBOutlet FBLoginView *login;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _login.delegate=self;
+    _login.readPermissions = @[@"public_profile", @"email", @"user_friends"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

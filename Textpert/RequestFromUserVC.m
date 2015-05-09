@@ -87,6 +87,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)backFromRespondToUser:(UIStoryboardSegue *)segue {
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
@@ -96,7 +100,6 @@
     // Return the number of rows in the section.
     return count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -128,7 +131,6 @@
 }
 
 - (void)didClickbackbtn:(id)sender {
-   
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

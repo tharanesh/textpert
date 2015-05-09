@@ -952,28 +952,11 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9z4-zI-JHP">
-                                                    <rect key="frame" x="43" y="70" width="532" height="43"/>
-                                                    <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbleFix" translatesAutoresizingMaskIntoConstraints="NO" id="mfJ-Uf-qO3">
+                                                    <rect key="frame" x="43" y="65" width="15" height="15"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="43" id="QW5-iE-Ujq"/>
-                                                    </constraints>
-                                                    <state key="normal" title="View Some users Conversation">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="11"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubblePoint" translatesAutoresizingMaskIntoConstraints="NO" id="mfJ-Uf-qO3">
-                                                    <rect key="frame" x="44" y="66" width="9" height="9"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="9" id="VRU-Vw-k5e"/>
-                                                        <constraint firstAttribute="width" constant="9" id="yMZ-rq-QtL"/>
+                                                        <constraint firstAttribute="height" constant="15" id="VRU-Vw-k5e"/>
+                                                        <constraint firstAttribute="width" constant="15" id="yMZ-rq-QtL"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ii-UC-hdn">
@@ -1031,6 +1014,23 @@
                                                         <constraint firstAttribute="height" constant="2" id="vS3-ZH-adI"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9z4-zI-JHP">
+                                                    <rect key="frame" x="44" y="71" width="532" height="43"/>
+                                                    <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="43" id="QW5-iE-Ujq"/>
+                                                    </constraints>
+                                                    <state key="normal" title="View Some users Conversation">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="11"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="9z4-zI-JHP" firstAttribute="leading" secondItem="K1t-5h-aNJ" secondAttribute="leading" constant="43" id="1y9-jp-5qD"/>
@@ -1042,14 +1042,14 @@
                                                 <constraint firstItem="pXY-fj-jFB" firstAttribute="top" secondItem="oDz-t4-RWH" secondAttribute="bottom" constant="-2" id="FoG-Gd-LBO"/>
                                                 <constraint firstAttribute="trailing" secondItem="pXY-fj-jFB" secondAttribute="trailing" constant="10" id="GKX-1n-K3J"/>
                                                 <constraint firstAttribute="trailing" secondItem="PK1-Oy-qnO" secondAttribute="trailing" constant="47" id="Ghg-uQ-QMa"/>
-                                                <constraint firstItem="9z4-zI-JHP" firstAttribute="top" secondItem="mfJ-Uf-qO3" secondAttribute="bottom" constant="-5" id="Hfh-Oq-JaE"/>
+                                                <constraint firstItem="9z4-zI-JHP" firstAttribute="top" secondItem="mfJ-Uf-qO3" secondAttribute="bottom" constant="-10" id="Hfh-Oq-JaE"/>
                                                 <constraint firstItem="3ii-UC-hdn" firstAttribute="top" secondItem="K1t-5h-aNJ" secondAttribute="top" constant="12" id="J1x-lY-5yr"/>
                                                 <constraint firstAttribute="trailing" secondItem="9z4-zI-JHP" secondAttribute="trailing" constant="25" id="LR6-oX-m76"/>
                                                 <constraint firstItem="9z4-zI-JHP" firstAttribute="top" secondItem="RMc-po-Mvd" secondAttribute="bottom" constant="15" id="Lub-pA-EWf"/>
                                                 <constraint firstItem="9z4-zI-JHP" firstAttribute="top" secondItem="K1t-5h-aNJ" secondAttribute="topMargin" constant="82" id="U8k-bR-G9Z"/>
                                                 <constraint firstItem="ZK8-dM-sjj" firstAttribute="leading" secondItem="K1t-5h-aNJ" secondAttribute="leading" constant="16" id="XQy-QN-aqr"/>
                                                 <constraint firstItem="9z4-zI-JHP" firstAttribute="leading" secondItem="mfJ-Uf-qO3" secondAttribute="trailing" constant="-16" id="ZSu-qW-uBL"/>
-                                                <constraint firstItem="9z4-zI-JHP" firstAttribute="leading" secondItem="mfJ-Uf-qO3" secondAttribute="trailing" constant="-10" id="all-6O-uc7"/>
+                                                <constraint firstItem="9z4-zI-JHP" firstAttribute="leading" secondItem="mfJ-Uf-qO3" secondAttribute="trailing" constant="-15" id="all-6O-uc7"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="TzP-sq-33E" secondAttribute="bottom" constant="-7" id="eYQ-YO-wvS"/>
                                                 <constraint firstItem="mfJ-Uf-qO3" firstAttribute="top" secondItem="ZK8-dM-sjj" secondAttribute="bottom" constant="7" id="edb-8E-ASJ"/>
                                                 <constraint firstItem="Bsq-nP-1pl" firstAttribute="leading" secondItem="K1t-5h-aNJ" secondAttribute="leading" constant="17" id="jme-OS-wb5"/>
@@ -1601,11 +1601,11 @@
                                     <constraint firstAttribute="width" constant="40" id="TNa-Gd-K3x"/>
                                     <constraint firstAttribute="height" constant="38" id="Zl7-gn-rLJ"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="menuButtonBlue">
+                                <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickback:" destination="Sq1-ma-Xmc" eventType="touchUpInside" id="QOj-Fg-NUc"/>
+                                    <segue destination="RQJ-Q4-WaH" kind="unwind" unwindAction="backFromRespondToUser:" id="j8h-Aw-M0E"/>
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhv-wE-6Pv">
@@ -1743,6 +1743,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59X-8s-Ral" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RQJ-Q4-WaH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6843" y="-373"/>
         </scene>
@@ -1756,7 +1757,7 @@
         <image name="SettingIconWhiteNoWhite" width="83" height="83"/>
         <image name="StarEmptyNew.png" width="48" height="47"/>
         <image name="StarFullNew.png" width="47" height="47"/>
-        <image name="bubblePoint" width="8" height="10"/>
+        <image name="bubbleFix" width="81" height="91"/>
         <image name="contextButton@3x.png" width="216" height="216"/>
         <image name="defaultUser" width="47" height="47"/>
         <image name="logoWhiteFilled" width="326" height="326"/>

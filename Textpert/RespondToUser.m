@@ -142,8 +142,4 @@ UIImageView *_imageView;
     _chatScrollView.hidden = YES;
 }
 
-- (IBAction)didClickback:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
 @end

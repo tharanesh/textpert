@@ -852,7 +852,7 @@
 				INFOPLIST_FILE = TextpertTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4749a164-bb79-40fe-a46e-a95d6d1b1566";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Textpert.app/Textpert";
 			};
 			name = Debug;
@@ -870,7 +870,7 @@
 				INFOPLIST_FILE = TextpertTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4749a164-bb79-40fe-a46e-a95d6d1b1566";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Textpert.app/Textpert";
 			};
 			name = Release;

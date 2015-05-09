@@ -167,7 +167,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.12549019610000001" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="17O-xI-EMj"/>
                                     <constraint firstItem="tcE-pa-CPh" firstAttribute="leading" secondItem="QEc-PY-fWk" secondAttribute="leading" constant="16" id="Kye-Ib-o8y"/>
@@ -218,7 +218,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.078431372550000003" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QJ4-OI-UUP" firstAttribute="top" secondItem="Uao-6U-EYS" secondAttribute="bottom" constant="42" id="1x4-V1-swm"/>
                             <constraint firstItem="wLB-2j-OLj" firstAttribute="top" secondItem="QEc-PY-fWk" secondAttribute="bottom" constant="1" id="LnD-4C-r1c"/>

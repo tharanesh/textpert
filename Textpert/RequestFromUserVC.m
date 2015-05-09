@@ -113,7 +113,7 @@
     cell.backgroundColor=[UIColor clearColor];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
-    NSString *index=[NSString stringWithFormat:@"%ld",indexPath.row];
+    NSString *index=[NSString stringWithFormat:@"%ld", (long)indexPath.row];
     datas=[requests valueForKey:index];
     cell.lblname.text=[datas valueForKey:@"name"];
     cell.lblExpery.text=[datas valueForKey:@"expiry_date"];
@@ -134,7 +134,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *index=[NSString stringWithFormat:@"%ld",indexPath.row];
+    NSString *index=[NSString stringWithFormat:@"%ld", (long)indexPath.row];
     datas=[requests valueForKey:index];
     [self performSegueWithIdentifier:@"textpertrespond" sender:self];
 }

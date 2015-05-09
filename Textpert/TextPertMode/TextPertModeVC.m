@@ -83,7 +83,7 @@
 //                            
                             textpert_mode=@"1";
                             [_btntextPertmode setBackgroundImage:[UIImage imageNamed:@"OnButton.png"] forState:UIControlStateNormal];
-                             _lblTextPertMode.text=@"Textpert Mode";
+                             _lblTextPertMode.text=@"Textpert Mode ON";
                         }
                         else
                         {
@@ -94,7 +94,7 @@
 //                            [[NSUserDefaults standardUserDefaults] synchronize];
                             
                             [_btntextPertmode setBackgroundImage:[UIImage imageNamed:@"OffButton.png"] forState:UIControlStateNormal];
-                            _lblTextPertMode.text=@"User Mode";
+                            _lblTextPertMode.text=@"Textpert Mode OFF";
 
                         }
                     }

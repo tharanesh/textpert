@@ -24,7 +24,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NewLogoWhiteFilledNew" translatesAutoresizingMaskIntoConstraints="NO" id="JMJ-g9-MnR">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logoWhiteFilled" translatesAutoresizingMaskIntoConstraints="NO" id="JMJ-g9-MnR">
                     <rect key="frame" x="120" y="33" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="214" id="2bw-aM-Rdq"/>
@@ -49,6 +49,6 @@
         </view>
     </objects>
     <resources>
-        <image name="NewLogoWhiteFilledNew" width="326" height="326"/>
+        <image name="logoWhiteFilled" width="326" height="326"/>
     </resources>
 </document>

@@ -42,7 +42,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gxd-WU-q4e">
                                         <rect key="frame" x="0.0" y="0.0" width="599" height="575"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewLogoWhiteFilledNew" translatesAutoresizingMaskIntoConstraints="NO" id="3gr-3x-gp5">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhiteFilled" translatesAutoresizingMaskIntoConstraints="NO" id="3gr-3x-gp5">
                                                 <rect key="frame" x="193" y="20" width="214" height="214"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="214" id="A1f-aA-hMG"/>
@@ -96,6 +96,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Gxd-WU-q4e" firstAttribute="leading" secondItem="Js4-xM-dpv" secondAttribute="leading" id="Fcy-gY-dRO"/>
                                     <constraint firstAttribute="trailing" secondItem="Gxd-WU-q4e" secondAttribute="trailing" id="INQ-u1-JBb"/>
@@ -111,7 +112,7 @@
                                 </variation>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16862745100000001" green="0.7725490196" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.206682846" green="0.77455091480000005" blue="0.79040783640000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Js4-xM-dpv" secondAttribute="trailing" id="Iv6-pq-WBi"/>
                             <constraint firstItem="Js4-xM-dpv" firstAttribute="leading" secondItem="6Hp-FW-m3S" secondAttribute="leading" id="TIn-Zu-7Is"/>
@@ -181,7 +182,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewLogoWhiteFilledNew" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-pa-CPh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhiteFilled" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-pa-CPh">
                                         <rect key="frame" x="16" y="14" width="65" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="4V9-bJ-FZw"/>
@@ -264,11 +265,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="my1-qx-J9S"/>
                                 <exclude reference="v8T-42-9Tl"/>
                                 <exclude reference="ynt-iT-qpc"/>
                                 <exclude reference="PuH-Ic-Fc1"/>
                                 <exclude reference="Zqz-BT-ZPP"/>
-                                <exclude reference="my1-qx-J9S"/>
                             </mask>
                         </variation>
                     </view>
@@ -1751,7 +1752,6 @@
         <image name="LineBreak" width="7" height="32"/>
         <image name="LogoNew" width="208" height="214"/>
         <image name="Medal10_000.png" width="138" height="143"/>
-        <image name="NewLogoWhiteFilledNew" width="326" height="326"/>
         <image name="RequestsIcon.png" width="330" height="330"/>
         <image name="SettingIconWhiteNoWhite" width="83" height="83"/>
         <image name="StarEmptyNew.png" width="48" height="47"/>
@@ -1759,6 +1759,7 @@
         <image name="bubblePoint" width="8" height="10"/>
         <image name="contextButton@3x.png" width="216" height="216"/>
         <image name="defaultUser" width="47" height="47"/>
+        <image name="logoWhiteFilled" width="326" height="326"/>
         <image name="menuButton.png" width="110" height="110"/>
         <image name="menuButtonBlue" width="37" height="37"/>
         <image name="menuButtonWhite" width="37" height="37"/>

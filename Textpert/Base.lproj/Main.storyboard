@@ -1407,6 +1407,7 @@
                                             <outlet property="star5" destination="DwP-o6-r8x" id="Plp-GR-Rq2"/>
                                             <outlet property="textpertname" destination="582-ce-Oc8" id="fCY-AX-7Qz"/>
                                             <outlet property="txtResponse" destination="fM0-98-T7m" id="g9g-2w-oBm"/>
+                                            <outlet property="userImageView" destination="gUt-4p-QZc" id="Esc-DE-EHO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

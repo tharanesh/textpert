@@ -54,9 +54,8 @@
     {;
         [_btnBack addTarget:self action:@selector(didClickback:) forControlEvents:UIControlEventTouchUpInside];
     }
-
-    // Do any additional setup after loading the view.
 }
+
 -(void)getUserResponse
 {
     NSString *uid = [[NSUserDefaults standardUserDefaults]
@@ -143,17 +142,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
     ResponseViewCell *cell = (ResponseViewCell *)[tableView dequeueReusableCellWithIdentifier:@"CellID" forIndexPath:indexPath];
     
-    // Configure the cell...
-    if(cell==nil)
-    {
+    if (!cell) {
         cell=[[ResponseViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
     }
-
     
-    // Configure the cell...
     cell.backgroundColor=[UIColor clearColor];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     NSString *index=[NSString stringWithFormat:@"%ld",indexPath.row];
@@ -168,10 +162,9 @@
     [cell.star3 addTarget:self action:@selector(didClickStar:) forControlEvents:UIControlEventTouchUpInside];
     [cell.star4 addTarget:self action:@selector(didClickStar:) forControlEvents:UIControlEventTouchUpInside];
     [cell.star5 addTarget:self action:@selector(didClickStar:) forControlEvents:UIControlEventTouchUpInside];
-    //    cell.backgroundColor=[UIColor colorWithRed:0/255.0 green:153/255.0 blue:204/255.0 alpha:1.0];
-    // cell.textLabel.textColor=[UIColor whiteColor];
     
-    //  img.image=[UIImage imageNamed:[NSString stringWithFormat:@"icn%d.png",indexPath.row]];
+    // Get user profile picture and set in cell
+    // TODO: cell.userImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"icn%ld.png", (long)indexPath.row]];
     
     return cell;
 }
@@ -180,7 +173,7 @@
 {
     NSString *index=[NSString stringWithFormat:@"%ld",sender.tag];
     datas=[responses valueForKey:index];
-    NSString *flag=[[NSUserDefaults standardUserDefaults] valueForKey:@"flag"];
+//  NSString *flag=[[NSUserDefaults standardUserDefaults] valueForKey:@"flag"];
 //    if([flag isEqualToString:@"1"])
 //    {
         datas=[responses valueForKey:index];

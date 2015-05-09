@@ -17,12 +17,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *star3;
 @property (strong, nonatomic) IBOutlet UIButton *star4;
 @property (strong, nonatomic) IBOutlet UIButton *star5;
+@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 @property BOOL isRate;
 @end
 
 @interface ResponseView : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *responseCount;
-
 @property (strong, nonatomic) IBOutlet UILabel *lblUser;
 @property (strong, nonatomic) IBOutlet UIButton *btnBack;
 

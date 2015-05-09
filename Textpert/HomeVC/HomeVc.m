@@ -66,17 +66,15 @@
     self.profilePic.layer.borderWidth=2;
     self.profilePic.layer.borderColor=[UIColor blackColor].CGColor;
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,     NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:@"savedImage.png"];
     UIImage *img = [UIImage imageWithContentsOfFile:getImagePath];
-    if(img!=nil)
-    {
-    [_profilePic setBackgroundImage:img  forState:UIControlStateNormal];
+    if (img != nil) {
+        [_profilePic setBackgroundImage:img  forState:UIControlStateNormal];
     }
-  
-    // Do any additional setup after loading the view.
 }
+
 -(void)textPertChecking
 {
     NSString *uid = [[NSUserDefaults standardUserDefaults]

@@ -81,8 +81,10 @@ UIImageView *_imageView;
     
             if(val==1) {
                 SCLAlertView *alert = [[SCLAlertView alloc] initWithNewWindow];
+                [alert alertIsDismissed:^{
+                    [self performSegueWithIdentifier:@"backFromRespondToUser" sender:self];
+                }];
                 [alert showSuccess:@"Message!" subTitle:[NSString stringWithFormat:@"Successfully sent to %@",_lblname.text] closeButtonTitle:@"Done" duration:0.0f];
-                [self performSegueWithIdentifier:@"backFromRespondToUser" sender:self];
             }
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"Error: %@", error);

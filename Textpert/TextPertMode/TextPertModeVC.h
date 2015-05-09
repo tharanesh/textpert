@@ -10,6 +10,7 @@
 
 @interface TextPertModeVC : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *sidebtn;
+@property (weak, nonatomic) IBOutlet UILabel *expText;
 @property (strong, nonatomic) IBOutlet UIButton *btntextPertmode;
 @property (strong, nonatomic) IBOutlet UILabel *lblTextPertMode;
 @end

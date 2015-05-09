@@ -84,6 +84,7 @@
                             textpert_mode=@"1";
                             [_btntextPertmode setBackgroundImage:[UIImage imageNamed:@"OnButton.png"] forState:UIControlStateNormal];
                              _lblTextPertMode.text=@"Textpert Mode ON";
+                             _expText.text=@"You’ve activated textpert mode. it’s like the bat signal but for texting.";
                         }
                         else
                         {
@@ -95,6 +96,7 @@
                             
                             [_btntextPertmode setBackgroundImage:[UIImage imageNamed:@"OffButton.png"] forState:UIControlStateNormal];
                             _lblTextPertMode.text=@"Textpert Mode OFF";
+                            _expText.text=@"Good things come to those who textpert. Turn on textpert mode to help those in need of guidance for all things texting.";
 
                         }
                     }
@@ -164,13 +166,15 @@
         {
             displayingFirstButton=NO;
             [_btntextPertmode setBackgroundImage:[UIImage imageNamed:@"OnButton.png"] forState:UIControlStateNormal];
-            _lblTextPertMode.text=@"Textpert Mode";
+            _lblTextPertMode.text=@"Textpert Mode ON";
+            _expText.text=@"You’ve activated textpert mode. it’s like the bat signal but for texting.";
+            
         }
         else
         {
             displayingFirstButton=YES;
             [_btntextPertmode setBackgroundImage:[UIImage imageNamed:@"OffButton.png"] forState:UIControlStateNormal];
-            _lblTextPertMode.text=@"User Mode";
+            _lblTextPertMode.text=@"Textpert Mode OFF";
         }
            }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {

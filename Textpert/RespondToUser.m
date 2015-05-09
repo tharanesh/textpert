@@ -17,6 +17,8 @@
 
 @implementation RespondToUser
 
+UIImageView *_imageView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _lblname.text=[self.datas valueForKey:@"name"];
@@ -103,13 +105,27 @@
 }
     
 }
+
+
+
 - (IBAction)didClickViewContext:(id)sender {
     _txtResponse.hidden=YES;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,     NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:@"chatImage.png"];
-    // TODO: _imgChat.image = [UIImage imageWithContentsOfFile:getImagePath];
+    UIImage *image = [UIImage imageWithContentsOfFile:getImagePath];
+    _imageView = [[UIImageView alloc] initWithImage: image];
+    //_imageView.frame = _chatScrollView.bounds;
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
+    _chatScrollView.contentSize = image.size;
+    [_chatScrollView addSubview: _imageView];
+    _chatScrollView.delegate = self;
+    
     _btnSendResponse.hidden=YES;
+}
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return _imageView;
 }
 
 - (void)didReceiveMemoryWarning {

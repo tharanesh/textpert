@@ -38,7 +38,7 @@
     NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"http://businessofimagination.com/textpert/screenshots/%@",[self.datas valueForKey:@"path"]]];
 //    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://businessofimagination.com/textpert/screenshots/%@",[self.datas valueForKey:@"path"]]]];
     [self downloadImageWithURL:url completionBlock:^(BOOL succeeded, UIImage *image) {
-        [_imgChat setImage:image];
+    // TODO:    [_imgChat setImage:image];
         [hud hide:YES];
     }];
     
@@ -108,7 +108,7 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,     NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:@"chatImage.png"];
-    _imgChat.image = [UIImage imageWithContentsOfFile:getImagePath];
+    // TODO: _imgChat.image = [UIImage imageWithContentsOfFile:getImagePath];
     _btnSendResponse.hidden=YES;
 }
 
@@ -163,7 +163,7 @@
 - (IBAction)didClickrespond:(id)sender {
     
     _txtResponse.hidden=NO;
-    _imgChat.image=nil;
+    // TODO: _imgChat.image=nil;
     _btnSendResponse.hidden=NO;
 }
 - (IBAction)didClickback:(id)sender {

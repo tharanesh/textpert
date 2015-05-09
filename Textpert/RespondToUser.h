@@ -11,7 +11,7 @@
 @interface RespondToUser : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (strong, nonatomic) IBOutlet UILabel *lblname;
-@property (strong, nonatomic) IBOutlet UIImageView *imgChat;
+@property (weak, nonatomic) IBOutlet UIScrollView *chatScrollView;
 @property(nonatomic,strong) NSDictionary *datas;
 @property (strong, nonatomic) IBOutlet UILabel *lblTime;
 - (IBAction)didClickrespond:(id)sender;

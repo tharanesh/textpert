@@ -593,7 +593,7 @@
                                                     <constraint firstAttribute="width" constant="85" id="deM-WV-REj"/>
                                                     <constraint firstAttribute="height" constant="85" id="lxg-PD-BJ8"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="SettingIconWhite">
+                                                <state key="normal" backgroundImage="SettingIconWhiteNoWhite">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -1753,7 +1753,7 @@
         <image name="Medal10_000.png" width="138" height="143"/>
         <image name="NewLogoWhiteFilledNew" width="326" height="326"/>
         <image name="RequestsIcon.png" width="330" height="330"/>
-        <image name="SettingIconWhite" width="83" height="83"/>
+        <image name="SettingIconWhiteNoWhite" width="83" height="83"/>
         <image name="StarEmptyNew.png" width="48" height="47"/>
         <image name="StarFullNew.png" width="47" height="47"/>
         <image name="bubblePoint" width="8" height="10"/>

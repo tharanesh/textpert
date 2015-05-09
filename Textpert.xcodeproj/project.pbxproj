@@ -41,7 +41,6 @@
 		DB2E5E751AF8E71000BF482E /* Medal10_000.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E371AF8E71000BF482E /* Medal10_000.png */; };
 		DB2E5E761AF8E71000BF482E /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E381AF8E71000BF482E /* menuButton.png */; };
 		DB2E5E771AF8E71000BF482E /* menuButtonBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E391AF8E71000BF482E /* menuButtonBlue.png */; };
-		DB2E5E781AF8E71000BF482E /* NewLogoWhiteFilled-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E3A1AF8E71000BF482E /* NewLogoWhiteFilled-1.png */; };
 		DB2E5E791AF8E71000BF482E /* OffButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E3B1AF8E71000BF482E /* OffButton.png */; };
 		DB2E5E7A1AF8E71000BF482E /* OnButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E3C1AF8E71000BF482E /* OnButton.png */; };
 		DB2E5E7B1AF8E71000BF482E /* RequestsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2E5E3D1AF8E71000BF482E /* RequestsIcon.png */; };
@@ -148,7 +147,6 @@
 		DB2E5E371AF8E71000BF482E /* Medal10_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medal10_000.png; sourceTree = "<group>"; };
 		DB2E5E381AF8E71000BF482E /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
 		DB2E5E391AF8E71000BF482E /* menuButtonBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButtonBlue.png; sourceTree = "<group>"; };
-		DB2E5E3A1AF8E71000BF482E /* NewLogoWhiteFilled-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewLogoWhiteFilled-1.png"; sourceTree = "<group>"; };
 		DB2E5E3B1AF8E71000BF482E /* OffButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OffButton.png; sourceTree = "<group>"; };
 		DB2E5E3C1AF8E71000BF482E /* OnButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnButton.png; sourceTree = "<group>"; };
 		DB2E5E3D1AF8E71000BF482E /* RequestsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RequestsIcon.png; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 				DB2E5E371AF8E71000BF482E /* Medal10_000.png */,
 				DB2E5E381AF8E71000BF482E /* menuButton.png */,
 				DB2E5E391AF8E71000BF482E /* menuButtonBlue.png */,
-				DB2E5E3A1AF8E71000BF482E /* NewLogoWhiteFilled-1.png */,
 				DB2E5E3B1AF8E71000BF482E /* OffButton.png */,
 				DB2E5E3C1AF8E71000BF482E /* OnButton.png */,
 				DB2E5E3D1AF8E71000BF482E /* RequestsIcon.png */,
@@ -592,7 +589,6 @@
 				DB2E5E721AF8E71000BF482E /* Logo New@3x.png in Resources */,
 				DB2E5E791AF8E71000BF482E /* OffButton.png in Resources */,
 				DB2E5E761AF8E71000BF482E /* menuButton.png in Resources */,
-				DB2E5E781AF8E71000BF482E /* NewLogoWhiteFilled-1.png in Resources */,
 				DB6FFEBD1AF23D840026E16B /* Main.storyboard in Resources */,
 				DB2E5E871AF8E71000BF482E /* Info.plist in Resources */,
 				DB2E5E831AF8E71000BF482E /* StarEmptyNew.png in Resources */,

@@ -40,7 +40,14 @@ UIImageView *_imageView;
     NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"http://businessofimagination.com/textpert/screenshots/%@",[self.datas valueForKey:@"path"]]];
 //    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://businessofimagination.com/textpert/screenshots/%@",[self.datas valueForKey:@"path"]]]];
     [self downloadImageWithURL:url completionBlock:^(BOOL succeeded, UIImage *image) {
-    // TODO:    [_imgChat setImage:image];
+        _imageView = [[UIImageView alloc] initWithImage: image];
+        
+        CGRect newImageViewFrame = _imageView.frame;
+        newImageViewFrame.size.width = _chatScrollView.frame.size.width;
+        newImageViewFrame.size.height = newImageViewFrame.size.width * image.size.height / image.size.width;
+        _imageView.frame = newImageViewFrame;
+        _chatScrollView.contentSize = _imageView.frame.size;
+        [_chatScrollView addSubview: _imageView];
         [hud hide:YES];
     }];
     
@@ -69,6 +76,7 @@ UIImageView *_imageView;
                                }
                            }];
 }
+
 - (IBAction)didClickSend:(id)sender {
     
     if(_txtResponse.text==0||_txtResponse.textColor==[UIColor whiteColor])
@@ -107,21 +115,9 @@ UIImageView *_imageView;
 }
 
 - (IBAction)didClickViewContext:(id)sender {
-    _txtResponse.hidden=YES;
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,     NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:@"chatImage.png"];
-    UIImage *image = [UIImage imageWithContentsOfFile:getImagePath];
-    _imageView = [[UIImageView alloc] initWithImage: image];
-
-    CGRect newImageViewFrame = _imageView.frame;
-    newImageViewFrame.size.width = _chatScrollView.frame.size.width;
-    newImageViewFrame.size.height = newImageViewFrame.size.width * image.size.height / image.size.width;
-    _imageView.frame = newImageViewFrame;
-    _chatScrollView.contentSize = _imageView.frame.size;
-    [_chatScrollView addSubview: _imageView];
-
-    _btnSendResponse.hidden=YES;
+    _chatScrollView.hidden = NO;
+    _txtResponse.hidden = YES;
+    _btnSendResponse.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -173,11 +169,11 @@ UIImageView *_imageView;
 }
 
 - (IBAction)didClickrespond:(id)sender {
-    
-    _txtResponse.hidden=NO;
-    // TODO: _imgChat.image=nil;
-    _btnSendResponse.hidden=NO;
+    _txtResponse.hidden = NO;
+    _btnSendResponse.hidden = NO;
+    _chatScrollView.hidden = YES;
 }
+
 - (IBAction)didClickback:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }

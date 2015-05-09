@@ -106,8 +106,6 @@ UIImageView *_imageView;
     
 }
 
-
-
 - (IBAction)didClickViewContext:(id)sender {
     _txtResponse.hidden=YES;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,     NSUserDomainMask, YES);
@@ -115,17 +113,15 @@ UIImageView *_imageView;
     NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:@"chatImage.png"];
     UIImage *image = [UIImage imageWithContentsOfFile:getImagePath];
     _imageView = [[UIImageView alloc] initWithImage: image];
-    //_imageView.frame = _chatScrollView.bounds;
-    _imageView.contentMode = UIViewContentModeScaleAspectFill;
-    _chatScrollView.contentSize = image.size;
-    [_chatScrollView addSubview: _imageView];
-    _chatScrollView.delegate = self;
-    
-    _btnSendResponse.hidden=YES;
-}
 
--(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    return _imageView;
+    CGRect newImageViewFrame = _imageView.frame;
+    newImageViewFrame.size.width = _chatScrollView.frame.size.width;
+    newImageViewFrame.size.height = newImageViewFrame.size.width * image.size.height / image.size.width;
+    _imageView.frame = newImageViewFrame;
+    _chatScrollView.contentSize = _imageView.frame.size;
+    [_chatScrollView addSubview: _imageView];
+
+    _btnSendResponse.hidden=YES;
 }
 
 - (void)didReceiveMemoryWarning {

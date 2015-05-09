@@ -29,7 +29,7 @@
     UIImageView *imgView=[[UIImageView alloc]initWithFrame:CGRectMake(0,5,60,60)];
     imgView.image=logoImage;
     self.navigationItem.titleView =imgView;
-     menuItems=[[NSArray alloc]initWithObjects:@"Profile",@"Texpert Mode",@"Upload A Photo", @"",@"Responses (user mode)",@"Requests (textpert mode)",nil];
+     menuItems=[[NSArray alloc]initWithObjects:@"Upload A Photo",@"Profile",@"Texpert Mode", @"",@"Responses (user mode)",@"Requests (textpert mode)",nil];
     // Do any additional setup after loading the view.
 }
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
@@ -82,18 +82,18 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.row==0)
     {
-        [self performSegueWithIdentifier:@"Home" sender:self];
+        [self performSegueWithIdentifier:@"segueUploadImg" sender:self];
     }
     else if(indexPath.row==1)
     {
         
-        [self performSegueWithIdentifier:@"textpertMode" sender:self];
+        [self performSegueWithIdentifier:@"Home" sender:self];
     }
 
         else if(indexPath.row==2)
     {
         
-        [self performSegueWithIdentifier:@"segueUploadImg" sender:self];
+        [self performSegueWithIdentifier:@"textpertMode" sender:self];
     }
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

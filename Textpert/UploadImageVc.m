@@ -12,13 +12,13 @@
 #import "SCLAlertView.h"
 #import "GoogleWearAlertObjc.h"
 
-@interface UploadImageVc ()<UIImagePickerControllerDelegate,UITextFieldDelegate>
-{
+@interface UploadImageVc()<UIImagePickerControllerDelegate, UITextFieldDelegate> {
     UIDatePicker *datePicker;
     UITextField *pickerfld;
     NSString *expiryDate;
     NSData *imgData;
     BOOL isTextpert;
+    __weak IBOutlet UIImageView *previewImageView;
 }
 @end
 
@@ -48,6 +48,7 @@
   imgData= [[NSData alloc]init];
     // Do any additional setup after loading the view.
 }
+
 -(void)textPertChecking
 {
     NSString *uid = [[NSUserDefaults standardUserDefaults]
@@ -146,8 +147,9 @@
    // encodedString = [self base64forData:imageData];
     [self dismissViewControllerAnimated:YES completion:^{}];
     
-   [[GoogleWearAlertObjc getInstance]prepareNotificationToBeShown:[[GoogleWearAlertViewObjc alloc]initWithTitle:@"Uploaded" andImage:nil andWithType:success andWithDuration:2.5 inViewController:self atPostion:Top canBeDismissedByUser:NO]];
-   
+    previewImageView.image = image;
+    
+    [[GoogleWearAlertObjc getInstance]prepareNotificationToBeShown:[[GoogleWearAlertViewObjc alloc]initWithTitle:@"Uploaded" andImage:nil andWithType:success andWithDuration:2.5 inViewController:self atPostion:Top canBeDismissedByUser:NO]];
 }
 /*
 #pragma mark - Navigation

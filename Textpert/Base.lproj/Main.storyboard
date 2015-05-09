@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -318,7 +319,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UPLOAD A SCREENSHOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WI-bo-5T4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPLOAD A SCREENSHOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WI-bo-5T4">
                                 <rect key="frame" x="210" y="295" width="180" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="LwN-7h-1qJ"/>
@@ -328,7 +329,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKO-Tn-oDU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKO-Tn-oDU">
                                 <rect key="frame" x="254" y="207" width="93" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="cO3-0h-xva"/>
@@ -341,8 +342,8 @@
                                     <action selector="didClickImageBrowseBtn:" destination="WzO-6X-C0w" eventType="touchUpInside" id="1NG-ba-f7M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4If-kk-m2D">
-                                <rect key="frame" x="265" y="485" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4If-kk-m2D">
+                                <rect key="frame" x="265" y="520" width="71" height="30"/>
                                 <color key="backgroundColor" red="0.16862745100000001" green="0.7725490196" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7WR-zD-ymg"/>
@@ -357,8 +358,8 @@
                                     <action selector="didClickUpload:" destination="WzO-6X-C0w" eventType="touchUpInside" id="I79-wH-CiF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time duration" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXp-4Y-a23">
-                                <rect key="frame" x="176" y="405" width="248" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time duration" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXp-4Y-a23">
+                                <rect key="frame" x="245" y="460" width="110" height="30"/>
                                 <color key="backgroundColor" red="0.16862745100000001" green="0.7725490196" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="53D-yz-csz"/>
@@ -370,8 +371,8 @@
                                     <action selector="textFieldDidBeginEditing:" destination="WzO-6X-C0w" eventType="editingDidBegin" id="yvY-L5-MZa"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Textperts are here to help you get the next date." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLe-MX-d6v">
-                                <rect key="frame" x="50" y="123" width="502" height="95"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Textperts are here to help you get the next date." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLe-MX-d6v">
+                                <rect key="frame" x="145" y="92" width="311" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="311" id="LJx-Bg-yw2"/>
                                     <constraint firstAttribute="height" constant="95" id="bgI-S5-QlD"/>
@@ -380,33 +381,37 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xzw-P5-Pea">
+                                <rect key="frame" x="252" y="324" width="96" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xzw-P5-Pea" secondAttribute="height" multiplier="3:4" id="tJX-fZ-qzP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.206682846" green="0.77455091480000005" blue="0.79040783640000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4WI-bo-5T4" firstAttribute="top" secondItem="wKO-Tn-oDU" secondAttribute="bottom" constant="3" id="0Rq-IZ-MoW"/>
                             <constraint firstItem="9A7-eL-QmY" firstAttribute="top" secondItem="PLe-kW-ftg" secondAttribute="bottom" constant="8" id="7f2-Mp-rLf"/>
                             <constraint firstAttribute="centerX" secondItem="fXp-4Y-a23" secondAttribute="centerX" id="AfZ-ZI-oKc"/>
-                            <constraint firstItem="uLe-MX-d6v" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PAq-py-dce" secondAttribute="bottom" constant="30" id="E7A-RQ-NCE"/>
+                            <constraint firstItem="uLe-MX-d6v" firstAttribute="top" secondItem="PAq-py-dce" secondAttribute="bottom" constant="30" id="E7A-RQ-NCE"/>
                             <constraint firstAttribute="centerX" secondItem="PAq-py-dce" secondAttribute="centerX" id="EwL-9T-ohr"/>
                             <constraint firstItem="9A7-eL-QmY" firstAttribute="leading" secondItem="zfb-6f-eFB" secondAttribute="leading" constant="17" id="KK6-aZ-WCF"/>
                             <constraint firstItem="PAq-py-dce" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9A7-eL-QmY" secondAttribute="trailing" constant="15" id="MS7-uk-Lse"/>
-                            <constraint firstItem="wKO-Tn-oDU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uLe-MX-d6v" secondAttribute="bottom" constant="20" id="OIA-lT-5bB"/>
-                            <constraint firstItem="fXp-4Y-a23" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4WI-bo-5T4" secondAttribute="bottom" constant="30" id="Q32-nJ-0j3"/>
-                            <constraint firstItem="tOz-E2-DUU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4If-kk-m2D" secondAttribute="bottom" constant="50" id="Qcx-lD-xHK"/>
+                            <constraint firstItem="wKO-Tn-oDU" firstAttribute="top" secondItem="uLe-MX-d6v" secondAttribute="bottom" constant="20" id="OIA-lT-5bB"/>
+                            <constraint firstItem="tOz-E2-DUU" firstAttribute="top" secondItem="4If-kk-m2D" secondAttribute="bottom" constant="50" id="Qcx-lD-xHK"/>
+                            <constraint firstItem="Xzw-P5-Pea" firstAttribute="top" secondItem="4WI-bo-5T4" secondAttribute="bottom" constant="8" id="TaR-B5-DD3"/>
                             <constraint firstAttribute="centerX" secondItem="4WI-bo-5T4" secondAttribute="centerX" id="WGf-k3-5tU"/>
+                            <constraint firstItem="fXp-4Y-a23" firstAttribute="top" secondItem="Xzw-P5-Pea" secondAttribute="bottom" constant="8" id="YRb-Rc-yzt"/>
                             <constraint firstItem="PAq-py-dce" firstAttribute="top" secondItem="PLe-kW-ftg" secondAttribute="bottom" constant="15" id="ZQd-oC-qMj"/>
                             <constraint firstAttribute="centerX" secondItem="uLe-MX-d6v" secondAttribute="centerX" id="pat-v9-FH3"/>
                             <constraint firstAttribute="centerX" secondItem="wKO-Tn-oDU" secondAttribute="centerX" id="pnw-y4-dbS"/>
-                            <constraint firstItem="4If-kk-m2D" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fXp-4Y-a23" secondAttribute="bottom" constant="30" id="tgB-PH-O7Q"/>
+                            <constraint firstItem="4If-kk-m2D" firstAttribute="top" secondItem="fXp-4Y-a23" secondAttribute="bottom" constant="30" id="tgB-PH-O7Q"/>
+                            <constraint firstAttribute="centerX" secondItem="Xzw-P5-Pea" secondAttribute="centerX" id="w6c-b3-loD"/>
                             <constraint firstAttribute="centerX" secondItem="4If-kk-m2D" secondAttribute="centerX" id="xxh-Hz-Mkg"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Q32-nJ-0j3"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="previewImageView" destination="Xzw-P5-Pea" id="OOA-TN-up6"/>
                         <outlet property="sidebtn" destination="9A7-eL-QmY" id="Njb-AV-Fix"/>
                         <outlet property="txtExpirydateAndtime" destination="fXp-4Y-a23" id="f5d-Mq-kFt"/>
                     </connections>
@@ -1606,7 +1611,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RQJ-Q4-WaH" kind="unwind" unwindAction="backFromRespondToUser:" id="j8h-Aw-M0E"/>
+                                    <segue destination="RQJ-Q4-WaH" kind="unwind" identifier="backFromRespondToUser" unwindAction="backFromRespondToUser:" id="j8h-Aw-M0E"/>
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhv-wE-6Pv">
